@@ -177,7 +177,6 @@ const Home = () => {
           <p>&copy; 2024 Safire Consultants. All rights reserved.</p>
         </div>
       </footer>
-      <script src="scripts.js"></script>
     </body>
   );
 };
