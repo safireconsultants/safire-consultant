@@ -124,16 +124,16 @@ const Home = () => {
           </div>
           <div className="service-items">
             <div className="service-item">
-              <img src="https://via.placeholder.com/300" alt="Service 1" />
+              <Image src="https://via.placeholder.com/300" alt="Service 1" />
             </div>
             <div className="service-item">
-              <img src="https://via.placeholder.com/300" alt="Service 2" />
+              <Image src="https://via.placeholder.com/300" alt="Service 2" />
             </div>
             <div className="service-item">
-              <img src="https://via.placeholder.com/300" alt="Service 3" />
+              <Image src="https://via.placeholder.com/300" alt="Service 3" />
             </div>
             <div className="service-item">
-              <img src="https://via.placeholder.com/300" alt="Service 4" />
+              <Image src="https://via.placeholder.com/300" alt="Service 4" />
             </div>
           </div>
         </div>
@@ -150,9 +150,9 @@ const Home = () => {
         <div className="container">
           <h2>Our Partners</h2>
           {/* <marquee behavior="scroll" direction="left">
-          <img src="https://via.placeholder.com/150" alt="Google" />
-          <img src="https://via.placeholder.com/150" alt="Glassdoor" />
-          <img src="https://via.placeholder.com/150" alt="Goodfirms" />
+          <Image src="https://via.placeholder.com/150" alt="Google" />
+          <Image src="https://via.placeholder.com/150" alt="Glassdoor" />
+          <Image src="https://via.placeholder.com/150" alt="Goodfirms" />
         </marquee> */}
         </div>
       </section>
