@@ -124,16 +124,16 @@ const Home = () => {
           </div>
           <div className="service-items">
             <div className="service-item">
-              <Image src="https://via.placeholder.com/300" alt="Service 1" />
+              <Image src="https://via.placeholder.com/300" width={100} height={100} alt="Service 1" />
             </div>
             <div className="service-item">
-              <Image src="https://via.placeholder.com/300" alt="Service 2" />
+              <Image src="https://via.placeholder.com/300" width={100} height={100} alt="Service 2" />
             </div>
             <div className="service-item">
-              <Image src="https://via.placeholder.com/300" alt="Service 3" />
+              <Image src="https://via.placeholder.com/300" width={100} height={100} alt="Service 3" />
             </div>
             <div className="service-item">
-              <Image src="https://via.placeholder.com/300" alt="Service 4" />
+              <Image src="https://via.placeholder.com/300" width={100} height={100} alt="Service 4" />
             </div>
           </div>
         </div>

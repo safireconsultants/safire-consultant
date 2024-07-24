@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import Loader from "@/components/loader/loader";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn("text-white bg-black", montserrat.className)}>
+        <Loader />
         {children}
       </body>
     </html>
