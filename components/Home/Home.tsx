@@ -30,7 +30,7 @@ const Home = () => {
           <nav className="hidden lg:flex">
             <ul>
               {navbardata.map(({ id, name, route }) => (
-                <li>
+                <li key={id}>
                   <Link href={route}>{name}</Link>
                 </li>
               ))}
@@ -55,7 +55,7 @@ const Home = () => {
                 <div>
                   <ul className="flex flex-col space-y-5">
                     {navbardata.map(({ id, name, route }) => (
-                      <li>
+                      <li key={id}>
                         <Link href={route}>{name}</Link>
                       </li>
                     ))}
