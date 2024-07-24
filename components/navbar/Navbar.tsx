@@ -4,9 +4,9 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <section>
-      <nav className="flex flex-col justify-center items-center bg-gray-700 py-20">
-        <div className="flex justify-between items-center w-[38rem] py-2 border-b">
+    <section className="absolute w-screen z-20">
+      <nav className="flex flex-col justify-center items-center py-20">
+        <div className="flex justify-between items-center w-[32rem] md:w-[38rem] lg:w-[45rem] py-2 border-b">
           <Link href="/">
             <h1 className="text-xl font-semibold">LOGO</h1>
           </Link>
@@ -21,7 +21,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-between items-center w-[38rem] my-2">
+        <div className="flex justify-between items-center w-[32rem] md:w-[38rem] lg:w-[45rem] my-2">
           {navbardata.slice(0, 4).map(({ id, name, route }) => (
             <Link key={id} href={route} className="px-8 py-1 border-r">
               {name}

@@ -1,11 +1,11 @@
+import Home from "@/components/Home/Home";
 import { MarqueeDemo } from "@/components/marque/Marque";
 import Image from "next/image";
 
-export default function Home() {
+const HomePage: React.FC = () => {
   return (
-    <div>
-      <h1>Safire Consultants</h1>
-      <MarqueeDemo />
-    </div>
+    <Home />
   );
-}
+};
+
+export default HomePage;
