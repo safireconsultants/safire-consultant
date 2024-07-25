@@ -6,8 +6,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className="text-white bg-black overflow-hidden">
+    <html lang="en" className="!scroll-smooth" style={{scrollBehavior:'smooth'}}>
+      <body className="text-white bg-black overflow-hidden !scroll-smooth">
         {children}
       </body>
     </html>

@@ -13,6 +13,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import ContactForm from "../contact/ContactForm";
+import { Button } from "../ui/button";
 
 const Home = () => {
   return (
@@ -77,14 +78,15 @@ const Home = () => {
           </div>
         </div>
       </header>
-      <section className="hero">
-        <div className="container">
-          <h2>Lorem Ipsum</h2>
-          <h1>LOREM IPSUM</h1>
-          <a href="#" className="btn">
-            Get Started
-          </a>
+      <section className="relative hero z-0">
+        <div className="relative container z-10">
+          <h2>Partnering for progress</h2>
+          <h1 className="font-semibold">SAFIRE CONSULTANTS</h1>
+          <Link href="/#services">
+            <Button variant={"secondary"}>Get Started</Button>
+          </Link>
         </div>
+        <div className="absolute top-0 h-full w-[100%] bg-black/40"></div>
       </section>
       <section className="about py-20" id="about">
         <div className="container">
@@ -121,7 +123,7 @@ const Home = () => {
         <div className="container">
           <div className="mb-10">
             <h2 className="text-xl">Our Services</h2>
-            <hr className="w-52" />
+            <hr className="w-44" />
           </div>
           <div className="flex flex-wrap justify-evenly items-center gap-6">
             <div className="">
@@ -187,14 +189,16 @@ const Home = () => {
             <h2 className="text-xl">Reach Us</h2>
             <hr className="w-32" />
           </div>
-          <div className="flex justify-center space-x-10">
-            <Image
-              src="/contactimg.png"
-              alt="contactimg"
-              width={100}
-              height={100}
-              className="w-64"
-            />
+          <div className="flex flex-col-reverse lg:flex-row justify-center gap-10">
+            <div className="flex justify-center items-center">
+              <Image
+                src="/contactimg.jpg"
+                alt="contactimg"
+                width={400}
+                height={400}
+                className="lg:w-96 w-full h-full select-none rounded-lg"
+              />
+            </div>
             <ContactForm />
           </div>
         </div>
