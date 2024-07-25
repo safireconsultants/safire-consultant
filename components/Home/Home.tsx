@@ -20,15 +20,17 @@ const Home = () => {
     <body>
       <header className="fixed top-0 w-full z-20">
         <div className="container">
-          <div className="">
-            <Image
-              src="/logo.png"
-              alt="logo"
-              width={100}
-              height={100}
-              className=""
-            />
-          </div>
+          <Link href="/">
+            <div className="">
+              <Image
+                src="/logo.png"
+                alt="logo"
+                width={100}
+                height={100}
+                className=""
+              />
+            </div>
+          </Link>
           <nav className="hidden lg:flex">
             <ul>
               {navbardata.map(({ id, name, route }) => (
@@ -45,7 +47,7 @@ const Home = () => {
             </div>
             <div className="flex justify-center items-center space-x-2 text-sm font-semibold">
               <Mail className="w-4" />
-              <h1>safireconsultants@gmail.com</h1>
+              <h1>safireconsultants0011@gmail.com</h1>
             </div>
           </div>
           <div className="lg:hidden">
@@ -194,9 +196,9 @@ const Home = () => {
               <Image
                 src="/contactimg.jpg"
                 alt="contactimg"
-                width={400}
+                width={500}
                 height={400}
-                className="lg:w-96 w-full h-full select-none rounded-lg"
+                className="lg:w-max w-full h-full select-none rounded-lg"
               />
             </div>
             <ContactForm />

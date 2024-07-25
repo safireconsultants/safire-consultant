@@ -13,9 +13,9 @@ import {
 } from "../ui/form";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import { Textarea } from "../ui/textarea";
+import { Input } from "../ui/input";
 
 const ContactForm = () => {
   const ContactForm = z.object({
@@ -49,7 +49,7 @@ const ContactForm = () => {
                 <FormItem>
                   <FormLabel>Name</FormLabel>
                   <FormControl>
-                    <Input {...field} />
+                    <Input {...field} className="text-black" />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -62,7 +62,7 @@ const ContactForm = () => {
                 <FormItem>
                   <FormLabel>Email</FormLabel>
                   <FormControl>
-                    <Input {...field} />
+                    <Input {...field} className="text-black" />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -75,7 +75,7 @@ const ContactForm = () => {
                 <FormItem>
                   <FormLabel>Message</FormLabel>
                   <FormControl>
-                    <Textarea {...field} />
+                    <Textarea {...field} className="text-black" />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -83,7 +83,11 @@ const ContactForm = () => {
             />
           </div>
           <div className="flex justify-center items-center">
-            <Button type="submit" className="rounded-full">
+            <Button
+              variant={"secondary"}
+              type="submit"
+              className="rounded-full"
+            >
               Submit
             </Button>
           </div>
