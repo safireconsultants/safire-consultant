@@ -10,7 +10,7 @@ body {
   background-color: #111;
 }
 
-.container {
+.containers {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
@@ -77,10 +77,6 @@ header .contact-info p {
   font-size: 16px;
 }
 
-.about {
-  padding: 50px 0;
-}
-
 .about h2 {
   font-size: 36px;
   margin-bottom: 20px;
@@ -92,8 +88,8 @@ header .contact-info p {
 }
 
 .services {
+  display: flex;
   background-color: #222;
-  padding: 50px 0;
 }
 
 .services h2 {
@@ -108,7 +104,9 @@ header .contact-info p {
 }
 
 .service-item {
-  flex: 1 1 calc(25% - 20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -203,8 +201,8 @@ header .contact-info p {
 }
 
 .contact form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
@@ -252,7 +250,6 @@ footer p {
     margin-bottom: 10px;
   }
 
-  .service-items,
   .testimonial-items {
     flex-direction: column;
   }

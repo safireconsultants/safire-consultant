@@ -4,19 +4,20 @@ import Image from "next/image";
 import { Mail, Menu, Phone } from "lucide-react";
 import { navbardata } from "@/data/navbardata";
 import Link from "next/link";
-import Review from "../Review/Review";
+import Review from "@/components/Review/Review";
 import {
   Sheet,
   SheetClose,
   SheetContent,
   SheetFooter,
   SheetTrigger,
-} from "../ui/sheet";
+} from "@/components/ui/sheet";
+import ContactForm from "../contact/ContactForm";
 
 const Home = () => {
   return (
     <body>
-      <header className="absolute top-0 w-full z-20">
+      <header className="fixed top-0 w-full z-20">
         <div className="container">
           <div className="">
             <Image
@@ -46,7 +47,7 @@ const Home = () => {
               <h1>safireconsultants@gmail.com</h1>
             </div>
           </div>
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <Sheet>
               <SheetTrigger asChild>
                 <Menu />
@@ -85,7 +86,7 @@ const Home = () => {
           </a>
         </div>
       </section>
-      <section className="about py-10" id="about">
+      <section className="about py-20" id="about">
         <div className="container">
           <div className="flex justify-between mb-10">
             <div className="">
@@ -116,24 +117,48 @@ const Home = () => {
           </p>
         </div>
       </section>
-      <section className="services" id="services">
+      <section className="services py-20" id="services">
         <div className="container">
           <div className="mb-10">
             <h2 className="text-xl">Our Services</h2>
             <hr className="w-52" />
           </div>
-          <div className="service-items">
-            <div className="service-item">
-              <Image src="https://via.placeholder.com/300" width={100} height={100} alt="Service 1" />
+          <div className="flex flex-wrap justify-evenly items-center gap-6">
+            <div className="">
+              <Image
+                src="https://via.placeholder.com/300"
+                width={100}
+                height={100}
+                className="w-44"
+                alt="Service 1"
+              />
             </div>
-            <div className="service-item">
-              <Image src="https://via.placeholder.com/300" width={100} height={100} alt="Service 2" />
+            <div className="">
+              <Image
+                src="https://via.placeholder.com/300"
+                width={100}
+                height={100}
+                className="w-44"
+                alt="Service 2"
+              />
             </div>
-            <div className="service-item">
-              <Image src="https://via.placeholder.com/300" width={100} height={100} alt="Service 3" />
+            <div className="">
+              <Image
+                src="https://via.placeholder.com/300"
+                width={100}
+                height={100}
+                className="w-44"
+                alt="Service 3"
+              />
             </div>
-            <div className="service-item">
-              <Image src="https://via.placeholder.com/300" width={100} height={100} alt="Service 4" />
+            <div className="">
+              <Image
+                src="https://via.placeholder.com/300"
+                width={100}
+                height={100}
+                className="w-44"
+                alt="Service 4"
+              />
             </div>
           </div>
         </div>
@@ -156,20 +181,22 @@ const Home = () => {
         </marquee> */}
         </div>
       </section>
-      <section className="contact">
+      <section className="contact" id="contact">
         <div className="container">
-          <h2>Reach Us</h2>
-          {/* <form action="#">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" />
-          <label for="email">Email ID</label>
-          <input type="email" id="email" name="email" />
-          <label for="phone">Contact No.</label>
-          <input type="tel" id="phone" name="phone" />
-          <label for="subject">Subject</label>
-          <input type="text" id="subject" name="subject" />
-          <button type="submit" className="btn">Submit</button>
-        </form> */}
+          <div className="mb-10">
+            <h2 className="text-xl">Reach Us</h2>
+            <hr className="w-32" />
+          </div>
+          <div className="flex justify-center space-x-10">
+            <Image
+              src="/contactimg.png"
+              alt="contactimg"
+              width={100}
+              height={100}
+              className="w-64"
+            />
+            <ContactForm />
+          </div>
         </div>
       </section>
       <footer>
