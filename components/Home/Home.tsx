@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import "./Home.css";
 import Image from "next/image";
@@ -14,6 +16,34 @@ import {
 } from "@/components/ui/sheet";
 import ContactForm from "../contact/ContactForm";
 import { Button } from "../ui/button";
+import { useForm, ValidationError } from "@formspree/react";
+
+const servicesdata = [
+  {
+    name: "HR Consultancy",
+    image: "/hrc.jpg",
+  },
+  {
+    name: "Marketing Consultancy",
+    image: "/marc.jpg",
+  },
+  {
+    name: "Management Consultancy",
+    image: "/mc.jpg",
+  },
+  {
+    name: "Strategy Consultancy",
+    image: "/sc.jpg",
+  },
+  {
+    name: "Operations Consultancy",
+    image: "/opc.jpg",
+  },
+  {
+    name: "Tech Consultancy",
+    image: "/tc.jpg",
+  },
+];
 
 const Home = () => {
   return (
@@ -25,9 +55,9 @@ const Home = () => {
               <Image
                 src="/logo.png"
                 alt="logo"
-                width={100}
-                height={100}
-                className=""
+                width={400}
+                height={400}
+                className="w-24"
               />
             </div>
           </Link>
@@ -83,9 +113,10 @@ const Home = () => {
       <section className="relative hero z-0">
         <div className="relative container z-10">
           <h2>Partnering for progress</h2>
-          <h1 className="font-semibold">SAFIRE CONSULTANTS</h1>
           <Link href="/#services">
-            <Button variant={"secondary"}>Get Started</Button>
+            <Button variant={"secondary"} className="mt-10">
+              Get Started
+            </Button>
           </Link>
         </div>
         <div className="absolute top-0 h-full w-[100%] bg-black/40"></div>
@@ -128,42 +159,21 @@ const Home = () => {
             <hr className="w-44" />
           </div>
           <div className="flex flex-wrap justify-evenly items-center gap-6">
-            <div className="">
-              <Image
-                src="https://via.placeholder.com/300"
-                width={100}
-                height={100}
-                className="w-44"
-                alt="Service 1"
-              />
-            </div>
-            <div className="">
-              <Image
-                src="https://via.placeholder.com/300"
-                width={100}
-                height={100}
-                className="w-44"
-                alt="Service 2"
-              />
-            </div>
-            <div className="">
-              <Image
-                src="https://via.placeholder.com/300"
-                width={100}
-                height={100}
-                className="w-44"
-                alt="Service 3"
-              />
-            </div>
-            <div className="">
-              <Image
-                src="https://via.placeholder.com/300"
-                width={100}
-                height={100}
-                className="w-44"
-                alt="Service 4"
-              />
-            </div>
+            {servicesdata.map(({ name, image }, idx) => (
+              <div
+                className="flex flex-col bg-white/40 p-4 rounded-xl"
+                key={idx}
+              >
+                <Image
+                  src={image}
+                  width={400}
+                  height={400}
+                  className="w-80 rounded-lg"
+                  alt={image}
+                />
+                <h1 className="mt-2 font-semibold text-lg ">{name}</h1>
+              </div>
+            ))}
           </div>
         </div>
       </section>
