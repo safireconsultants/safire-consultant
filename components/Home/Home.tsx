@@ -171,7 +171,9 @@ const Home = () => {
                   className="w-80 rounded-lg"
                   alt={image}
                 />
-                <h1 className="mt-2 font-semibold text-lg ">{name}</h1>
+                <h1 className="mt-2 font-semibold text-lg text-center ">
+                  {name}
+                </h1>
               </div>
             ))}
           </div>
@@ -179,7 +181,10 @@ const Home = () => {
       </section>
       <section className="testimonials">
         <div className="container">
-          <h2>What Our Clients Say</h2>
+          <div className="mb-10">
+            <h2>What Our Clients Say</h2>
+            <hr className="w-52" />
+          </div>
           <div className="testimonial-items">
             <Review />
           </div>
@@ -187,7 +192,10 @@ const Home = () => {
       </section>
       <section className="partners">
         <div className="container">
-          <h2>Our Partners</h2>
+          <div className="mb-10">
+            <h2>Our Successful Clients</h2>
+            <hr className="w-52" />
+          </div>
           {/* <marquee behavior="scroll" direction="left">
           <Image src="https://via.placeholder.com/150" alt="Google" />
           <Image src="https://via.placeholder.com/150" alt="Glassdoor" />
