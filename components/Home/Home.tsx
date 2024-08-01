@@ -138,17 +138,28 @@ const Home = () => {
               />
             </div>
           </div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-            turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-            nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
-            tellus elit sed risus. Maecenas eget condimentum velit, sit amet
-            feugiat lectus. Class aptent taciti sociosqu ad litora torquent per
-            conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus
-            enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex.
-            Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum
-            lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in
-            elementum tellus.
+          <p className="text-justify">
+            Welcome to{" "}
+            <span className="text-xl font-semibold">Safire Consultants</span>,
+            where our mission is encapsulated in our tagline:{" "}
+            <span className="italic">"Partnering for Progress."</span> Safire
+            Consultants is a leading business consulting firm dedicated to
+            empowering organizations to achieve their full potential. With
+            extensive expertise in business strategy, product launches,
+            branding, and marketing, Safire Consultants offers a comprehensive
+            suite of services. With a deep understanding of the complex business
+            landscape, our mission is to offer a comprehensive range of
+            strategic consulting services tailored to meet the unique needs of
+            our clients. Our services are designed to cater to businesses at all
+            stages, from startups to established enterprises looking to innovate
+            and grow. At Safire Consultants, our collaborative approach ensures
+            we work closely with clients to develop and execute strategies that
+            enhance efficiency, foster growth, and maximize profitability. Our
+            team of seasoned professionals combines industry expertise with
+            strategic acumen to deliver innovative solutions that drive success
+            and create lasting value. Join us on your journey to business
+            excellence and let Safire Consultants be your trusted advisor on the
+            path to achieving your business goals.
           </p>
         </div>
       </section>
@@ -160,10 +171,7 @@ const Home = () => {
           </div>
           <div className="flex flex-wrap justify-evenly items-center gap-6">
             {servicesdata.map(({ name, image }, idx) => (
-              <div
-                className="flex flex-col bg-white/40 p-4 rounded-xl"
-                key={idx}
-              >
+              <div className="flex flex-col p-4" key={idx}>
                 <Image
                   src={image}
                   width={400}
@@ -171,9 +179,7 @@ const Home = () => {
                   className="w-80 rounded-lg"
                   alt={image}
                 />
-                <h1 className="mt-2 font-semibold text-lg text-center ">
-                  {name}
-                </h1>
+                <h1 className="mt-2 text-lg text-center ">{name}</h1>
               </div>
             ))}
           </div>
@@ -190,17 +196,19 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="partners">
-        <div className="container">
+      <section className="partners" id="clients">
+        <div className="container mt-5">
           <div className="mb-10">
             <h2>Our Successful Clients</h2>
             <hr className="w-52" />
           </div>
-          {/* <marquee behavior="scroll" direction="left">
-          <Image src="https://via.placeholder.com/150" alt="Google" />
-          <Image src="https://via.placeholder.com/150" alt="Glassdoor" />
-          <Image src="https://via.placeholder.com/150" alt="Goodfirms" />
-        </marquee> */}
+          <Image
+            src="/skycap.png"
+            alt="skycap"
+            width={500}
+            height={500}
+            className="w-96"
+          />
         </div>
       </section>
       <section className="contact" id="contact">
