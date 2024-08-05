@@ -16,32 +16,37 @@ import {
 } from "@/components/ui/sheet";
 import ContactForm from "../contact/ContactForm";
 import { Button } from "../ui/button";
-import { useForm, ValidationError } from "@formspree/react";
 
 const servicesdata = [
   {
     name: "HR Consultancy",
     image: "/hrc.jpg",
+    line: "Our HR consultancy services streamline your human resource processes."
   },
   {
     name: "Marketing Consultancy",
     image: "/marc.jpg",
+    line: "Partner with us to elevate your market presence and achieve your business goals."
   },
   {
     name: "Management Consultancy",
     image: "/mc.jpg",
+    line: "Safire Consultants provides expert management consultancy services to drive business growth"
   },
   {
     name: "Strategy Consultancy",
     image: "/sc.jpg",
+    line: "Safire Consultants delivers data-driven strategy solutions."
   },
   {
     name: "Operations Consultancy",
     image: "/opc.jpg",
+    line: "Optimize efficiency and productivity with Safire Consultants."
   },
   {
     name: "Tech Consultancy",
     image: "/tc.jpg",
+    line: "Safire Consultants empowers businesses with innovative technology solutions."
   },
 ];
 
@@ -141,8 +146,8 @@ const Home = () => {
           <p className="text-justify">
             Welcome to{" "}
             <span className="text-xl font-semibold">Safire Consultants</span>,
-            where our mission is encapsulated in our tagline:{" "}
-            <span className="italic">"Partnering for Progress."</span> Safire
+            where our mission is encapsulated in our tagline:
+            <span className="italic">&quot;Partnering for Progress.&quot;</span> Safire
             Consultants is a leading business consulting firm dedicated to
             empowering organizations to achieve their full potential. With
             extensive expertise in business strategy, product launches,
@@ -170,8 +175,8 @@ const Home = () => {
             <hr className="w-44" />
           </div>
           <div className="flex flex-wrap justify-evenly items-center gap-6">
-            {servicesdata.map(({ name, image }, idx) => (
-              <div className="flex flex-col p-4" key={idx}>
+            {servicesdata.map(({ name, image, line }, idx) => (
+              <div className="flex flex-col justify-center items-center p-4 w-80" key={idx}>
                 <Image
                   src={image}
                   width={400}
@@ -180,6 +185,7 @@ const Home = () => {
                   alt={image}
                 />
                 <h1 className="mt-2 text-lg text-center ">{name}</h1>
+                <p className="text-sm text-center mt-2">{line}</p>
               </div>
             ))}
           </div>
