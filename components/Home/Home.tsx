@@ -20,14 +20,6 @@ import { useForm, ValidationError } from "@formspree/react";
 
 const servicesdata = [
   {
-    name: "HR Consultancy",
-    image: "/hrc.jpg",
-  },
-  {
-    name: "Marketing Consultancy",
-    image: "/marc.jpg",
-  },
-  {
     name: "Management Consultancy",
     image: "/mc.jpg",
   },
@@ -36,12 +28,20 @@ const servicesdata = [
     image: "/sc.jpg",
   },
   {
+    name: "Marketing Consultancy",
+    image: "/marc.jpg",
+  },
+  {
     name: "Operations Consultancy",
     image: "/opc.jpg",
   },
   {
-    name: "Tech Consultancy",
+    name: "Website Consultancy",
     image: "/tc.jpg",
+  },
+  {
+    name: "HR Consultancy",
+    image: "/hrc.jpg",
   },
 ];
 
