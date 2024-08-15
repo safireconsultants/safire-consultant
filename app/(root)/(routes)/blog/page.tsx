@@ -75,8 +75,8 @@ export default function BlogPage() {
       </header>
       <div className="container md:py-32 py-20">
         <div>
-          <h1 className="text-4xl text-center font-semibold">
-            Founder and Marketing Director
+          <h1 className="md:text-4xl text-3xl text-center font-semibold">
+            Founder and Managing Director
           </h1>
         </div>
         <div className="flex md:flex-row flex-col justify-center gap-10 mt-20">
@@ -86,11 +86,11 @@ export default function BlogPage() {
               alt="subham"
               width={500}
               height={500}
-              className="w-96 rounded-lg"
+              className="md:w-96 w-72 rounded-lg"
             />
           </div>
           <div className="max-w-2xl">
-            <h1 className="text-3xl font-semibold text-[#7e22ce]">Words from the CEO:</h1>
+            <h1 className="md:text-3xl text-2xl font-semibold text-white">Words from the CEO:</h1>
             <p className="mt-10 text-lg md:text-justify">
               At Safire Consultants, we believe that every business, no matter
               its size or industry, has the potential to achieve greatness. As

@@ -26,7 +26,7 @@ const servicesdata = [
   {
     name: "Strategy Consultancy",
     image: "/sc.jpg",
-    line: "Safire Consultants provides expert management consultancy services to drive business growth",
+    line: "Safire Consultants empowers businesses with innovative technology solutions",
   },
   {
     name: "Marketing Consultancy",
