@@ -22,10 +22,10 @@ const ContactForm = () => {
     <div className="flex-1">
       <form onSubmit={handleSubmit} className="flex flex-col space-y-5">
         <Label htmlFor="email">Email Address</Label>
-        <Input id="email" type="email" name="email" className="text-black" />
+        <Input id="email" type="email" name="email" className="bg-transparent border-b rounded-none" />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
         <Label htmlFor="message">Message</Label>
-        <Textarea id="message" name="message" className="text-black" />
+        <Textarea id="message" name="message" className="bg-transparent border-b rounded-none" />
         <ValidationError
           prefix="Message"
           field="message"
@@ -39,7 +39,7 @@ const ContactForm = () => {
           >
             Submit
           </Button>
-        </div>
+        </div> 
       </form>
     </div>
   );

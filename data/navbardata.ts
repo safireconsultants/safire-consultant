@@ -14,18 +14,18 @@ export const navbardata = [
     name: "Services",
     route: "/#services",
   },
-  // {
-  //   id: 4,
-  //   name: "Blog",
-  //   route: "/blog",
-  // },
   {
     id: 4,
+    name: "Blog",
+    route: "/blog",
+  },
+  {
+    id: 5,
     name: "Clients",
     route: "/#clients",
   },
   {
-    id: 5,
+    id: 6,
     name: "Contact Us",
     route: "/#contact",
   },

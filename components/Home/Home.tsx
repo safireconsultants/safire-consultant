@@ -21,32 +21,32 @@ const servicesdata = [
   {
     name: "Management Consultancy",
     image: "/mc.jpg",
-    line: "Safire Consultants provides expert management consultancy services to drive business growth"
+    line: "Safire Consultants provides expert management consultancy services to drive business growth",
   },
   {
     name: "Strategy Consultancy",
     image: "/sc.jpg",
-    line: "Safire Consultants provides expert management consultancy services to drive business growth"
+    line: "Safire Consultants provides expert management consultancy services to drive business growth",
   },
   {
     name: "Marketing Consultancy",
     image: "/marc.jpg",
-    line: "Partner with us to elevate your market presence and achieve your business goals."
+    line: "Partner with us to elevate your market presence and achieve your business goals.",
   },
   {
     name: "Operations Consultancy",
     image: "/opc.jpg",
-    line: "Optimize efficiency and productivity with Safire Consultants."
+    line: "Optimize efficiency and productivity with Safire Consultants.",
   },
   {
     name: "Website Consultancy",
     image: "/tc.jpg",
-    line: "Safire Consultants empowers businesses with innovative technology solutions."
+    line: "Safire Consultants empowers businesses with innovative technology solutions.",
   },
   {
     name: "HR Consultancy",
     image: "/hrc.jpg",
-    line: "Our HR consultancy services streamline your human resource processes."
+    line: "Our HR consultancy services streamline your human resource processes.",
   },
 ];
 
@@ -143,13 +143,15 @@ const Home = () => {
               />
             </div>
           </div>
-          <p className="text-justify">
+          <p className="">
             Welcome to{" "}
             <span className="text-xl font-semibold">Safire Consultants</span>,
             where our mission is encapsulated in our tagline:
-            <span className="italic">&quot;Partnering for Progress.&quot;</span> Safire
-            Consultants is a leading business consulting firm dedicated to
-            empowering organizations to achieve their full potential. With
+            <span className="italic">
+              &quot;Partnering for Progress.&quot;
+            </span>{" "}
+            Safire Consultants is a leading business consulting firm dedicated
+            to empowering organizations to achieve their full potential. With
             extensive expertise in business strategy, product launches,
             branding, and marketing, Safire Consultants offers a comprehensive
             suite of services. With a deep understanding of the complex business
@@ -176,7 +178,10 @@ const Home = () => {
           </div>
           <div className="flex flex-wrap justify-evenly items-center gap-6">
             {servicesdata.map(({ name, image, line }, idx) => (
-              <div className="flex flex-col justify-center items-center p-4 w-80" key={idx}>
+              <div
+                className="flex flex-col justify-center items-center p-4 w-80"
+                key={idx}
+              >
                 <Image
                   src={image}
                   width={400}
@@ -224,14 +229,14 @@ const Home = () => {
             <hr className="w-32" />
           </div>
           <div className="flex flex-col-reverse lg:flex-row justify-center gap-10">
-            <div className="flex justify-center items-center">
-              <Image
-                src="/contactimg.jpg"
-                alt="contactimg"
-                width={500}
-                height={400}
-                className="lg:w-max w-full h-full select-none rounded-lg"
-              />
+            <div className="flex justify-center">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.1075925064165!2d88.37531457613423!3d22.724241979384068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89bc11993b15f%3A0xb4104f8b063525d6!2sKhardah%20Station!5e0!3m2!1sen!2sin!4v1723748758174!5m2!1sen!2sin"
+                className="border-[2px] border-solid rounded-[10px] shadow-xl"
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
             <ContactForm />
           </div>

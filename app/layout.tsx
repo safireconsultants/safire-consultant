@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn("text-white bg-black", montserrat.className)}>
-        <PreLoader />
+        {/* <PreLoader /> */}
         {children}
       </body>
     </html>
