@@ -98,11 +98,11 @@ export default function BlogPage() {
               proud to lead a team dedicated to partner with clients to achieve
               their goals. Safire Consultants was founded with the goal of
               providing comprehensive solutions to businesses across various
-              sectors. Whether it's refining operations, enhancing your online
+              sectors. Whether it&apos;s refining operations, enhancing your online
               presence, or crafting effective strategies, we are committed to
               partnering with you to drive success. With our tagline, Partnering
               for Progress, we emphasize our dedication to working hand-in-hand
-              with our clients to achieve lasting success. Let's work together
+              with our clients to achieve lasting success. Let&apos;s work together
               to elevate your business to new heights.
             </p>
           </div>
