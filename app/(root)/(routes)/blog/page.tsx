@@ -90,7 +90,7 @@ export default function BlogPage() {
             />
           </div>
           <div className="max-w-2xl">
-            <h1 className="md:text-3xl text-2xl font-semibold text-white">Words from the CEO:</h1>
+            <h1 className="md:text-3xl text-2xl font-semibold text-white">Words from the Founder:</h1>
             <p className="mt-10 text-lg md:text-justify">
               At Safire Consultants, we believe that every business, no matter
               its size or industry, has the potential to achieve greatness. As
