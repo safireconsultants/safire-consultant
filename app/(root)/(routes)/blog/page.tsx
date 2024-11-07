@@ -36,7 +36,7 @@ export default function BlogPage() {
           <div className="hidden lg:flex flex-col justify-center items-end">
             <div className="flex justify-center items-center space-x-2 text-sm font-semibold">
               <Phone fill="white" className="w-4" />
-              <h1>+91 9876543210</h1>
+              <h1>+91 7980280120</h1>
             </div>
             <div className="flex justify-center items-center space-x-2 text-sm font-semibold">
               <Mail className="w-4" />
@@ -61,7 +61,7 @@ export default function BlogPage() {
                 <div className="flex flex-col justify-start items-start">
                   <div className="flex justify-center items-center space-x-2 text-sm font-semibold">
                     <Phone fill="white" className="w-4" />
-                    <h1>+91 9876543210</h1>
+                    <h1>+91 7980280120</h1>
                   </div>
                   <div className="flex justify-center items-center space-x-2 text-sm font-semibold">
                     <Mail className="w-4" />
@@ -80,7 +80,7 @@ export default function BlogPage() {
           </h1>
         </div>
         <div className="flex md:flex-row flex-col justify-center gap-10 mt-20">
-          <div>
+          {/* <div>
             <Image
               src="/subham.jpeg"
               alt="subham"
@@ -88,7 +88,7 @@ export default function BlogPage() {
               height={500}
               className="md:w-96 w-72 rounded-lg"
             />
-          </div>
+          </div> */}
           <div className="max-w-2xl">
             <h1 className="md:text-3xl text-2xl font-semibold text-white">Words from the Founder:</h1>
             <p className="mt-10 text-lg md:text-justify">
