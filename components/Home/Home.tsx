@@ -107,7 +107,7 @@ const Home = () => {
                   </div>
                   <div className="flex justify-center items-center space-x-2 text-sm font-semibold">
                     <Mail className="w-4" />
-                    <h1>safireconsultants@gmail.com</h1>
+                    <a href="mailto:safireconsultants0011@gmail.com">safireconsultants0011@gmail.com</a>
                   </div>
                 </div>
               </SheetContent>
