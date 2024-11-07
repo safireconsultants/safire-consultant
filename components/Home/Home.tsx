@@ -78,7 +78,7 @@ const Home = () => {
           <div className="hidden lg:flex flex-col justify-center items-end">
             <div className="flex justify-center items-center space-x-2 text-sm font-semibold">
               <Phone fill="white" className="w-4" />
-              <a href="https://wa.me/+919748634342" target="_blank">+91 7980280120</a>
+              <a href="https://wa.me/+917980280120" target="_blank">+91 7980280120</a>
             </div>
             <div className="flex justify-center items-center space-x-2 text-sm font-semibold">
               <Mail className="w-4" />
